@@ -19,3 +19,7 @@ Personal finance manager app built with modern Android architecture.
 - Hilt
 - MVVM
 - Navigation
+
+## Author
+
+Vu Thu Huyen
