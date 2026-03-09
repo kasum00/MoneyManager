@@ -1,0 +1,21 @@
+package com.huyen.moneymanager.data.local
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "transactions")
+data class TransactionEntity(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+    val title : String,
+    val amount: Double,
+    val type: String, // income or expense
+    val date: Long
+)
+/*
+id      : id giao dịch
+title   : tên chi tiêu
+amount  : số tiền
+type    : thu / chi
+date    : thời gian
+ */

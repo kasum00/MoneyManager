@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.huyen.moneymanager.ui.home.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/addTransactionFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.huyen.moneymanager.ui.add.AddTransactionFragment"
+        android:label="Add Transaction"/>
+
+</navigation>
